@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index.com</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="icons/bootstrap-icons.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <style>
+      #home .gambar {
+        border-radius: 20px;
+        margin-top: 50px;
+      }
+
+      .nunito {
+        font-family: "nunito";
+      }
+
+      .sacramento {
+        font-family: "sacramento";
+      }
+
+      .work-sans {
+        font-family: "work sans";
+      }
+
+      .home {
+        margin-top: -50px;
+      }
+
+      .nav-link:hover {
+        color: white;
+        text-decoration: underline;
+      }
+
+      hr {
+        width: 200px;
+        margin: auto;
+        border-top: 3px solid;
+        padding-bottom: 50px;
+      }
+
+      #portfolio img {
+        background-size: cover;
+        width: 100px;
+      }
+
+      .hrp {
+        color: black;
+      }
+
+      footer a {
+        padding-right: 20px;
+        color: white;
+      }
+
+      .fdiv {
+        display: inline-block;
+        margin-left: 30px;
+      }
+
+      .af {
+        text-decoration: none;
+      }
+      .af:hover {
+        text-decoration: underline;
+        color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- bagian navbar -->
+    <nav class="navbar navbar-expand-lg bg-black">
+      <div class="container-fluid">
+        <a class="navbar-brand work-sans" href="#home">Icam's Portfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#home"><i class="bi bi-house"></i> Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about"><i class="bi bi-person"></i> About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio"><i class="bi bi-image"></i> Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact"><i class="bi bi-envelope"></i> Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- akhir navbar -->
+
+    <section id="home" class="home vh-100 d-flex justify-content-center align-items-center">
+      <div class="text-center">
+        <img class="w-25 gambar" src="img/foto formal futuh.jpg" alt="Futuh Iqram Multazam" />
+        <h1 class="display-4 mb-3 nunito">Futuh Iqram Multazam</h1>
+        <p class="lead">A student in University Information Sistem and A Psychology Student.</p>
+      </div>
+    </section>
+
+    <section id="about" class="py-5">
+      <div class="container">
+        <h2 class="text-center pb-1">About Me</h2>
+        <hr />
+        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+      </div>
+    </section>
+
+    <section id="portfolio" class="py-5 bg-secondary">
+      <div class="container">
+        <h2 class="text-center text-dark">Portfolio</h2>
+        <hr class="hrp" />
+
+        <div class="row text-center">
+          <!-- card -->
+          <div class="col-md-4">
+            <img src="img/MODP0159.JPG" class="img-thumbnail" alt="Project 1" />
+            <h5 class="card-title">Project 1</h5>
+            <p class="card-text">Description of Project 1.</p>
+          </div>
+
+          <div class="col-md-4">
+            <img src="project2.jpg" class="img-thumbnail" alt="Project 2" />
+            <h5 class="card-title">Project 2</h5>
+            <p class="card-text">Description of Project 2.</p>
+          </div>
+
+          <div class="col-md-4">
+            <img src="project3.jpg" class="img-thumbnail" alt="Project 3" />
+            <h5 class="card-title">Project 3</h5>
+            <p class="card-text">Description of Project 3.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-5">
+      <div class="container">
+        <h2 class="text-center">Contact Me</h2>
+        <div class="row">
+          <div class="col-sm-6 offset-sm-3">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <div class="input-group">
+                  <span class="input-group-text">
+                    <i class="bi bi-person-vcard"></i>
+                  </span>
+                  <input type="text" class="form-control" id="name" autocomplete="off" placeholder=". . . . ." />
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <div class="input-group">
+                  <span class="input-group-text">
+                    <i class="bi bi-envelope-at"></i>
+                  </span>
+                  <input type="email" class="form-control" id="email" autocomplete="off" placeholder=". . . . ." />
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <div class="input-group">
+                  <span class="input-group-text">
+                    <i class="bi bi-chat-right-text"></i>
+                  </span>
+                  <textarea class="form-control" id="message" rows="3" placeholder="Masukan pesan yang sopan . . . ."></textarea>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-black text-center text-light py-3">
+      <p>&copy; 2024 Icam's Portfolio. All Rights Reserved.</p>
+      <div class="fdiv">
+        <!-- Github -->
+        <i class="bi bi-github fs-5"></i> <a class="af" href="https://github.com/futuhiqrammultazam" target="_blank">GitHub</a>
+        <!-- instagram -->
+        <i class="bi bi-instagram fs-5"></i> <a class="af" href="https://instagram.com/futuh_iqram" target="_blank">Instagram</a>
+      </div>
+    </footer>
+  </body>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</html>
