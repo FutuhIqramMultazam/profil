@@ -71,6 +71,11 @@
       footer {
         margin-top: 100px;
       }
+
+      .km {
+        right: 8px;
+        top: 8px;
+      }
     </style>
   </head>
   <body>
@@ -98,11 +103,11 @@
 
             <!-- link untuk modal -->
             <li class="nav-item">
-              <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-images"></i> My Albums</a>
+              <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#album"><i class="bi bi-images"></i> My Albums</a>
             </li>
 
             <!-- card modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="album" tabindex="-1" aria-labelledby="albumLabel" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                   <div class="text-end">
@@ -127,7 +132,23 @@
 
     <section id="home" class="home vh-100 d-flex justify-content-center align-items-center">
       <div class="text-center">
-        <img class="w-25 gambar" src="img/foto formal futuh.jpg" alt="Futuh Iqram Multazam" />
+        <a href="#" data-bs-toggle="modal" data-bs-target="#foto-portfolio">
+          <img class="w-25 gambar" src="img/foto formal futuh.jpg" alt="Futuh Iqram Multazam" />
+        </a>
+
+        <!-- light foto portfolio -->
+        <div class="modal fade" id="foto-portfolio" tabindex="-1" aria-labelledby="foto-portfolioLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <!-- close -->
+            <div type="button" data-bs-dismiss="modal" aria-label="Close"></div>
+
+            <div class="modal-body text-center">
+              <img style="border-radius: 10px" src="img/foto formal futuh.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <!-- akhir light foto portfolio -->
+
         <h1 class="display-4 mb-3 nunito">Futuh Iqram Multazam</h1>
         <p class="lead">I am a student of Information Systems and Psychology.</p>
       </div>
@@ -223,8 +244,11 @@
                   <div style="min-height: 120px" class="position-absolute">
                     <div class="collapse collapse-horizontal" id="collapseWidthExample">
                       <div class="card card-body bg-danger" style="width: 300px">
+                        <div class="text-end">
+                          <button type="button" class="km btn-close position-absolute" aria-label="Close" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample"></button>
+                        </div>
                         <i class="bi bi-tools"></i>
-                        Mohon maaf untuk sementara waktu, form kirim pesan ini tidak bisa di gunakan, di karenakan ada kendala server, Haturnuhun.
+                        Mohon maaf untuk sementara waktu, form kirim pesan ini tidak bisa di gunakan, di karenakan ada kendala server, Hatur nuhun hehe.
                       </div>
                     </div>
                   </div>
