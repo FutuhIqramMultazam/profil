@@ -1,0 +1,68 @@
+#home .gambar {
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+.nunito {
+  font-family: "nunito";
+}
+
+.sacramento {
+  font-family: "sacramento";
+}
+
+.work-sans {
+  font-family: "work sans";
+}
+
+.home {
+  margin-top: -50px;
+}
+
+.nav-link:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+hr {
+  width: 200px;
+  margin: auto;
+  border-top: 3px solid;
+  padding-bottom: 50px;
+}
+
+#portfolio img {
+  background-size: cover;
+  width: 100%;
+}
+
+.hrp {
+  color: black;
+}
+
+footer a {
+  padding-right: 20px;
+  color: white;
+}
+
+.fdiv {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.af {
+  text-decoration: none;
+}
+.af:hover {
+  text-decoration: underline;
+  color: gray;
+}
+
+footer {
+  margin-top: 100px;
+}
+
+.tombol-close-card {
+  right: 8px;
+  top: 8px;
+}
