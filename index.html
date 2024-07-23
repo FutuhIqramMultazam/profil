@@ -12,8 +12,25 @@
     <style></style>
   </head>
   <body>
+    <!-- card modal -->
+    <div class="modal fade" id="album" tabindex="-1" aria-labelledby="albumLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="text-end">
+            <button type="button" class="btn-close p-3" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+            <h4>Mohon maaf, Pengisian album icam belum beres</h4>
+            <br />
+            <img style="width: 200px; border-radius: 10px" src="img/kucing-nangis.jpeg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- card modal akir -->
+
     <!-- bagian navbar -->
-    <nav class="navbar navbar-expand-lg bg-black">
+    <nav class="navbar navbar-expand-lg bg-black fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand work-sans" href="#home">Icam's Portfolio</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,23 +55,6 @@
             <li class="nav-item">
               <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#album"><i class="bi bi-images"></i> My Albums</a>
             </li>
-
-            <!-- card modal -->
-            <div class="modal fade" id="album" tabindex="-1" aria-labelledby="albumLabel" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                  <div class="text-end">
-                    <button type="button" class="btn-close p-3" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body text-center">
-                    <h4>Mohon maaf, Pengisian album icam belum beres</h4>
-                    <br />
-                    <img style="width: 200px; border-radius: 10px" src="img/kucing-nangis.jpeg" alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- card modal akir -->
 
             <!-- akhir modal link -->
           </ul>
@@ -89,7 +89,7 @@
 
     <section id="about" class="py-5">
       <div class="container">
-        <h2 class="text-center pb-1">About Me</h2>
+        <h2 class="text-center pb-1 mt-5">About Me</h2>
         <hr />
         <p class="text-center">
           Assalamualaikum Warahmatullah Wabarokaatuh, Halo, Nama saya Futuh Iqram Multazam, Anda bisa memanggil saya Icam. Saya adalah seorang muslim sekaligus mahasiswa berusia 20 tahun dari kota Garut, di negara Indonesia. Saat ini, saya
@@ -104,7 +104,7 @@
 
     <section id="portfolio" class="py-5 bg-secondary">
       <div class="container">
-        <h2 class="text-center text-dark">Portfolio</h2>
+        <h2 class="text-center text-dark mt-5">Portfolio</h2>
         <hr class="hrp" />
 
         <div class="row text-center">
@@ -133,7 +133,7 @@
 
     <section id="contact" class="py-5 mb-5 mt-5">
       <div class="container">
-        <h2 class="text-center">Contact Me <i class="bi bi-smile"></i></h2>
+        <h2 class="text-center mt-5">Contact Me <i class="bi bi-smile"></i></h2>
         <div class="row">
           <div class="col-sm-6 offset-sm-3">
             <form>
@@ -181,7 +181,7 @@
                           <button type="button" class="tombol-close-card btn-close position-absolute" aria-label="Close" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample"></button>
                         </div>
                         <i class="bi bi-tools"></i>
-                        Mohon maaf untuk sementara waktu, form kirim pesan ini tidak bisa di gunakan, di karenakan ada kendala server, Hatur nuhun hehe.
+                        Mohon maaf untuk sementara waktu, form kirim pesan ini tidak bisa di gunakan, di karenakan ada kendala server, mohon untuk mengirim pesan lewat link instagram yang berada di paling bawah web ini, Hatur nuhun hehe.
                       </div>
                     </div>
                   </div>
@@ -198,9 +198,9 @@
       <p>&copy; 2024 Icam's Portfolio. All Rights Reserved.</p>
       <div class="fdiv">
         <!-- Github -->
-        <i class="bi bi-github fs-5"></i> <a class="af" href="https://github.com/futuhiqrammultazam" target="_blank">GitHub</a>
+        <a class="af" href="https://github.com/futuhiqrammultazam" target="_blank"><i class="bi bi-github fs-5"></i> GitHub</a>
         <!-- instagram -->
-        <i class="bi bi-instagram fs-5"></i> <a class="af" href="https://instagram.com/futuh_iqram" target="_blank">Instagram</a>
+        <a class="af" href="https://instagram.com/futuh_iqram" target="_blank"><i class="bi bi-instagram fs-5"></i> Instagram</a>
       </div>
     </footer>
   </body>
