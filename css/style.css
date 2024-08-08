@@ -1,3 +1,8 @@
+.nav-link:hover {
+  color: white;
+  text-decoration: underline;
+}
+
 #home {
   position: relative;
 }
@@ -27,6 +32,9 @@
   margin-top: 50px;
 }
 
+.home {
+  margin-top: -10px;
+}
 .nunito {
   font-family: "nunito";
 }
@@ -37,15 +45,6 @@
 
 .work-sans {
   font-family: "work sans";
-}
-
-.home {
-  margin-top: -10px;
-}
-
-.nav-link:hover {
-  color: white;
-  text-decoration: underline;
 }
 
 hr {
@@ -60,6 +59,34 @@ hr {
   width: 100%;
 }
 
+#portfolio {
+  position: relative;
+}
+
+#portfolio::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../img/car-right.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.7; /*Atur opacity gambar di sini */
+  z-index: 1;
+}
+
+#portfolio .content {
+  position: relative;
+  z-index: 2;
+}
+
+.tombol-close-card {
+  right: 8px;
+  top: 8px;
+}
 .hrp {
   color: black;
 }
@@ -84,9 +111,4 @@ footer a {
 
 footer {
   margin-top: 100px;
-}
-
-.tombol-close-card {
-  right: 8px;
-  top: 8px;
 }
