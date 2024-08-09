@@ -59,6 +59,19 @@ hr {
   width: 100%;
 }
 
+.nengah {
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  margin-bottom: 70px;
+}
+
+.nengah-right {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+}
+
 #portfolio {
   position: relative;
 }
@@ -111,4 +124,12 @@ footer a {
 
 footer {
   margin-top: 100px;
+}
+
+/* media query */
+
+@media (max-width: 992px) {
+  .text-portfolio {
+    color: black;
+  }
 }

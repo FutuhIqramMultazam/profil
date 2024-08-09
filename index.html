@@ -110,27 +110,70 @@
         <h2 class="text-center text-white mt-5">Portfolio</h2>
         <hr class="hr text-light" />
 
-        <div class="row text-center">
+        <div class="row text-portfolio text-center">
           <!-- card -->
-          <div class="col-md-4 mb-5">
-            <img src="img/icam-kecil.jpg" class="img-thumbnail" alt="Album 1" />
+          <div class="col-4 mb-5">
+            <a href="img/icam-kecil.jpg" data-toggle="lightbox" data-gallery="portfolio" data-caption="baju abu">
+              <img src="img/icam-kecil.jpg" class="img-thumbnail" alt="Album 1" />
+            </a>
             <h5 class="card-title">It's Me</h5>
             <p class="card-text">In 2005 maybe.</p>
           </div>
 
-          <div class="col-md-4 mb-5">
-            <img src="img/my-love.jpg" class="img-thumbnail mb-4" alt="Album 2" />
-            <img src="img/ayang-di-sawah.jpg" class="img-thumbnail" alt="Album 2" />
-            <h5 class="card-title">With My Wife</h5>
-            <p class="card-text">In Bandung City & My Village.</p>
+          <div class="col-4 mb-5">
+            <a href="img/work-wedding.jpeg" data-toggle="lightbox" data-gallery="portfolio">
+              <img src="img/work-wedding.jpeg" class="img-thumbnail mb-4" alt="Album 2" />
+            </a>
+
+            <h5 class="card-title">My Wife</h5>
+            <p class="card-text">She works in Wedding Make up.</p>
           </div>
 
-          <div class="col-md-4 mb-5">
-            <img src="img/kitab.jpeg" class="img-thumbnail" alt="Album 3" />
+          <div class="col-4 mb-5">
+            <a href="img/kitab.jpeg" data-toggle="lightbox" data-gallery="portfolio" data-caption="baju abu">
+              <img src="img/kitab.jpeg" class="img-thumbnail" alt="Album 3" />
+            </a>
             <h5 class="card-title">A book and a food</h5>
             <p class="card-text">Focus & Yummy</p>
           </div>
         </div>
+
+        <!-- couple -->
+
+        <div class="row mt-5">
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-4 text-portfolio nengah text-end">
+                <h3>My Wife</h3>
+                <p>Garut city, cibudug village</p>
+              </div>
+              <div class="col-8">
+                <a href="img/ayang-di-sawah.jpg" data-toggle="lightbox" data-gallery="portfolio" data-caption="My Love">
+                  <img src="img/ayang-di-sawah.jpg" class="img-responsive rounded-4 img-thumbnail" alt="Album 2" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-5">
+            <div class="row">
+              <div class="col-8">
+                <a href="img/my-love.jpg" data-toggle="lightbox" data-gallery="portfolio" data-caption="My Love">
+                  <img src="img/my-love.jpg" class="img-responsive rounded-4 img-thumbnail" alt="Album 2" />
+                </a>
+              </div>
+              <div class="col-4 nengah-right">
+                <h3>In Bandung City</h3>
+                <p>
+                  Futuh Iqram Multazam <br />
+                  and <br />
+                  Fadilah Fatwa
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- couple -->
       </div>
     </section>
 
@@ -214,4 +257,5 @@
   </body>
 
   <script src="js/bootstrap.js"></script>
+  <script src="js/index.bundle.min.js"></script>
 </html>
