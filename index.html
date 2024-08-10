@@ -222,7 +222,7 @@
                 <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
                 <!-- button asli -->
 
-                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample"><i class="bi bi-send"></i> Submit</button>
+                <button id="submit" class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample"><i class="bi bi-send"></i> Submit</button>
                 <!-- button js -->
 
                 <div class="d-flex justify-content-center">
@@ -233,7 +233,10 @@
                           <button type="button" class="tombol-close-card btn-close position-absolute" aria-label="Close" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample"></button>
                         </div>
                         <i class="bi bi-tools"></i>
-                        Mohon maaf untuk sementara waktu, form kirim pesan ini tidak bisa di gunakan, di karenakan ada kendala server, mohon untuk mengirim pesan lewat link instagram yang berada di paling bawah web ini, Hatur nuhun hehe.
+                        <p>
+                          Mohon maaf <span id="span"></span> untuk sementara waktu, form kirim pesan ini tidak bisa di gunakan, di karenakan ada kendala server, mohon untuk mengirim pesan lewat link instagram yang berada di paling bawah web
+                          ini, Hatur nuhun hehe.
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -273,5 +276,16 @@
     <a href="path/image.jpeg" data-lightbox="image-1" data-title="My caption">
       <img src="path/image.jpeg" />
     </a> -->
+
+    <script>
+      const submit = document.getElementById("submit");
+
+      submit.addEventListener("click", function () {
+        const span = document.getElementById("span");
+        const userInput = document.getElementById("name");
+        const hasilInput = userInput.value;
+        span.textContent = hasilInput;
+      });
+    </script>
   </body>
 </html>
