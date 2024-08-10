@@ -97,6 +97,18 @@ hr {
   z-index: 2;
 }
 
+.z-index-icam {
+  z-index: 100;
+}
+
+#contact .img-fluid:nth-child(1) {
+  width: 280px;
+  top: 250px;
+}
+#contact .img-fluid:nth-child(2) {
+  width: 150px;
+}
+
 .tombol-close-card {
   right: 8px;
   top: 8px;
@@ -135,6 +147,15 @@ footer {
   }
   .tek-sadow-sm {
     text-shadow: 0 2px 2px rgb(0 0 0 /0.5);
+  }
+
+  #contact .img-fluid:nth-child(1) {
+    width: 150px;
+    top: 500px;
+  }
+
+  #contact .img-fluid:nth-child(2) {
+    width: 75px;
   }
 }
 

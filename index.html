@@ -187,72 +187,79 @@
       </div>
     </section>
 
-    <section id="contact" class="py-5 nunito">
-      <div class="container">
-        <h2 class="text-center mt-5">Contact Me <i class="bi bi-smile"></i></h2>
-        <div class="text-center">
-          <figure>
-            <figcaption class="blockquote-footer pt-3">Kenalan yuk <cite title="Source Title">hehe</cite></figcaption>
-          </figure>
-        </div>
-        <div class="row">
-          <div class="col-sm-6 offset-sm-3">
-            <form>
-              <div class="mb-3">
-                <label for="name" class="form-label">Name</label>
-                <div class="input-group">
-                  <span class="input-group-text">
-                    <i class="bi bi-person-vcard"></i>
-                  </span>
-                  <input type="text" class="form-control" id="name" autocomplete="off" placeholder=". . . . ." />
+    <section id="contact" class="py-5 nunito position-relative">
+      <img src="img/Small-Vehicle.png" alt="" class="img-fluid position-absolute end-0" />
+      <img src="img/plane.png" alt="" class="img-fluid position-absolute" />
+      <!-- terbungkus z index -->
+      <div class="z-index-icam">
+        <div class="container">
+          <h2 class="text-center mt-5">Contact Me <i class="bi bi-smile"></i></h2>
+          <div class="text-center">
+            <figure>
+              <figcaption class="blockquote-footer pt-3">Kenalan yuk <cite title="Source Title">hehe</cite></figcaption>
+            </figure>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 offset-sm-3">
+              <form>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <div class="input-group">
+                    <span class="input-group-text">
+                      <i class="bi bi-person-vcard"></i>
+                    </span>
+                    <input type="text" class="form-control" id="name" autocomplete="off" placeholder=". . . . ." />
+                  </div>
                 </div>
-              </div>
 
-              <div class="mb-3">
-                <label for="email" class="form-label">Email address</label>
-                <div class="input-group">
-                  <span class="input-group-text">
-                    <i class="bi bi-envelope-at"></i>
-                  </span>
-                  <input type="email" class="form-control" id="email" autocomplete="off" placeholder=". . . . ." />
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email address</label>
+                  <div class="input-group">
+                    <span class="input-group-text">
+                      <i class="bi bi-envelope-at"></i>
+                    </span>
+                    <input type="email" class="form-control" id="email" autocomplete="off" placeholder=". . . . ." />
+                  </div>
                 </div>
-              </div>
 
-              <div class="mb-3">
-                <label for="message" class="form-label">Message</label>
-                <div class="input-group">
-                  <span class="input-group-text">
-                    <i class="bi bi-chat-right-text"></i>
-                  </span>
-                  <textarea class="form-control" id="message" rows="3" placeholder="Masukan pesan yang sopan . . . ."></textarea>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <div class="input-group">
+                    <span class="input-group-text">
+                      <i class="bi bi-chat-right-text"></i>
+                    </span>
+                    <textarea class="form-control" id="message" rows="3" placeholder="Masukan pesan yang sopan . . . ."></textarea>
+                  </div>
                 </div>
-              </div>
-              <div class="d-grid gap-2">
-                <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
-                <!-- button asli -->
+                <div class="d-grid gap-2">
+                  <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+                  <!-- button asli -->
 
-                <button id="submit" class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample"><i class="bi bi-send"></i> Submit</button>
-                <!-- button js -->
+                  <button id="submit" class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                    <i class="bi bi-send"></i> Submit
+                  </button>
+                  <!-- button js -->
 
-                <div class="d-flex justify-content-center">
-                  <div style="min-height: 120px" class="position-absolute">
-                    <div class="collapse collapse-horizontal" id="collapseWidthExample">
-                      <div class="card card-body bg-danger" style="width: 300px">
-                        <div class="text-end">
-                          <button type="button" class="tombol-close-card btn-close position-absolute" aria-label="Close" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample"></button>
+                  <div class="d-flex justify-content-center">
+                    <div style="min-height: 120px" class="position-absolute">
+                      <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                        <div class="card card-body bg-danger" style="width: 300px">
+                          <div class="text-end">
+                            <button type="button" class="tombol-close-card btn-close position-absolute" aria-label="Close" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample"></button>
+                          </div>
+                          <i class="bi bi-tools"></i>
+                          <p>
+                            Mohon maaf <span id="span"></span> untuk sementara waktu, form kirim pesan ini tidak bisa di gunakan, di karenakan ada kendala server, mohon untuk mengirim pesan lewat link instagram yang berada di paling bawah
+                            web ini, Hatur nuhun hehe.
+                          </p>
                         </div>
-                        <i class="bi bi-tools"></i>
-                        <p>
-                          Mohon maaf <span id="span"></span> untuk sementara waktu, form kirim pesan ini tidak bisa di gunakan, di karenakan ada kendala server, mohon untuk mengirim pesan lewat link instagram yang berada di paling bawah web
-                          ini, Hatur nuhun hehe.
-                        </p>
                       </div>
                     </div>
                   </div>
+                  <!-- akhir notifikasi -->
                 </div>
-                <!-- akhir notifikasi -->
-              </div>
-            </form>
+              </form>
+            </div>
           </div>
         </div>
       </div>
