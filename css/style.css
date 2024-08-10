@@ -35,16 +35,24 @@
 .home {
   margin-top: -10px;
 }
-.nunito {
-  font-family: "nunito";
+
+.icon-about {
+  width: 150px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
 }
 
-.sacramento {
-  font-family: "sacramento";
+.icon-about:nth-child(2) {
+  width: 150px;
+  position: absolute;
+  top: 440px;
+  left: 0px;
+  z-index: 2;
 }
 
-.work-sans {
-  font-family: "work sans";
+#about .container .img-fluid {
+  width: 270px;
 }
 
 hr {
@@ -57,6 +65,12 @@ hr {
 #portfolio img {
   background-size: cover;
   width: 100%;
+  transition: 0.3s;
+}
+
+#portfolio img:hover {
+  transform: scale(1.03);
+  box-shadow: 2px 2px 5px black;
 }
 
 .nengah {
@@ -98,7 +112,7 @@ hr {
 }
 
 .z-index-icam {
-  z-index: 100;
+  z-index: 10;
 }
 
 #contact .img-fluid:nth-child(1) {
@@ -106,7 +120,24 @@ hr {
   top: 250px;
 }
 #contact .img-fluid:nth-child(2) {
-  width: 150px;
+  width: 75px;
+  left: 60px;
+  transition: 0.3s;
+}
+#contact .img-fluid:nth-child(2):hover {
+  transform: translateX(80px);
+}
+#contact .img-fluid:nth-child(3) {
+  width: 300px;
+  top: 450px;
+  left: 20px;
+  /* transform: rotateY(180deg); */
+}
+#contact .img-fluid:nth-child(4) {
+  width: 190px;
+  top: -50px;
+  right: 20px;
+  z-index: 1;
 }
 
 .tombol-close-card {
@@ -149,19 +180,58 @@ footer {
     text-shadow: 0 2px 2px rgb(0 0 0 /0.5);
   }
 
+  #about {
+    height: 900px;
+  }
+
+  .icon-about {
+    width: 135px;
+    top: 830px;
+    left: 0;
+    z-index: 2;
+  }
+
+  .icon-about:nth-child(2) {
+    display: none;
+  }
+
+  #about .container .img-fluid {
+    width: 135px;
+  }
+
   #contact .img-fluid:nth-child(1) {
     width: 150px;
     top: 500px;
   }
 
   #contact .img-fluid:nth-child(2) {
-    width: 75px;
+    width: 37.5px;
+  }
+
+  #contact .img-fluid:nth-child(3) {
+    display: none;
+  }
+
+  #contact .img-fluid:nth-child(4) {
+    display: none;
   }
 }
 
-/* frame work buatan*/
 @media (min-width: 992px) {
   .tek-sadow {
     text-shadow: 0 2px 2px rgb(0 0 0 /0.5);
   }
+}
+
+/* frame work buatan*/
+.nunito {
+  font-family: "nunito";
+}
+
+.sacramento {
+  font-family: "sacramento";
+}
+
+.work-sans {
+  font-family: "work sans";
 }
