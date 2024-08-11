@@ -180,15 +180,8 @@ footer {
     text-shadow: 0 2px 2px rgb(0 0 0 /0.5);
   }
 
-  #about {
-    height: 900px;
-  }
-
   .icon-about {
-    width: 135px;
-    top: 830px;
-    left: 0;
-    z-index: 2;
+    display: none;
   }
 
   .icon-about:nth-child(2) {
@@ -214,6 +207,18 @@ footer {
 
   #contact .img-fluid:nth-child(4) {
     display: none;
+  }
+}
+
+@media (max-width: 1199px) {
+  .icon-about:nth-child(2) {
+    top: 500px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .icon-about:nth-child(2) {
+    top: 390px;
   }
 }
 
