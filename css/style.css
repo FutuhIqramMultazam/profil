@@ -181,7 +181,11 @@ footer {
   }
 
   .icon-about {
-    display: none;
+    /* display: none; */
+    width: 150px;
+    top: 700px;
+    left: 0px;
+    z-index: 2;
   }
 
   .icon-about:nth-child(2) {
@@ -206,6 +210,40 @@ footer {
   }
 
   #contact .img-fluid:nth-child(4) {
+    display: none;
+  }
+}
+
+@media (max-width: 479px) {
+  .icon-about {
+    top: 720px;
+  }
+}
+@media (max-width: 453px) {
+  .icon-about {
+    top: 740px;
+    width: 140px;
+  }
+}
+@media (max-width: 446px) {
+  .icon-about {
+    top: 760px;
+    width: 130px;
+  }
+}
+@media (max-width: 429px) {
+  .icon-about {
+    top: 790px;
+    width: 110px;
+  }
+}
+@media (max-width: 414px) {
+  .icon-about {
+    top: 820px;
+  }
+}
+@media (max-width: 400px) {
+  .icon-about {
     display: none;
   }
 }
